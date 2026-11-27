@@ -1,0 +1,56 @@
+{
+  "name": "raintoday-api",
+  "version": "0.1.0",
+  "description": "Unofficial TypeScript client for the RainToday (MeteoGroup / WeatherPro) APIs: minute-by-minute rain nowcast, radar frames, forecasts and location search.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:live": "RAINTODAY_LIVE=1 vitest run test/live.test.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "raintoday",
+    "meteogroup",
+    "weatherpro",
+    "rain",
+    "radar",
+    "nowcast",
+    "weather"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cldt-fr/typescript-raintoday-api.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

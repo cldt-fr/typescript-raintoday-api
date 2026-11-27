@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RainRoot xmlns:ns1="de.meteogroup.weatherpro.mapservice"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <MapGroup groupType="1" iconImg="http://www.oxygenxml.com/" name="Radar" description="radar" moreInfo="Description of this relly cool radar group">
+        
+        <MapParameterDescriptor id="rad_de" name="DE" description="Radar Deutschland">
+            <Projection geoPixelWidthMeter="2000"
+                geoPixelHeightMeter="2000"
+                pixelCountWidth="460"
+                pixelCountHeight="460"
+                pixelOffsetX="0"
+                pixelOffsetY="0"
+                velocityScale="11.0">+proj=stere +lat_0=90 +lat_ts=60 +lon_0=10 +a=6370000 +b=6370000 +y_0=3749618.296521171 +x_0=532461.7056238621</Projection>
+            <MapArea minZoom="2" maxZoom="14" name="de">
+                <BoundingRect longitude1="1.91780433" latitude1="46.9658661" longitude2="15.900782" latitude2="55.0984291"/>
+            </MapArea>
+            <Country code="49"/>
+        </MapParameterDescriptor>
+        
+        <MapParameterDescriptor id="rad_uk" name="UK" description="Radar UK and Ireland">
+            <Projection geoPixelWidthMeter="1999.2506234920268"
+                geoPixelHeightMeter="1999.2506234920268"
+                pixelCountWidth="583"
+                pixelCountHeight="767"
+                pixelOffsetX="-323099.1431098202"
+                pixelOffsetY="1194687.6889344007"
+                velocityScale="8.0">+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs</Projection>
+            <MapArea minZoom="2" maxZoom="14" name="uk">
+                <BoundingRect latitude1="60.1223" longitude1="-12.2158" latitude2="49.4665" longitude2="2.2578"/>
+            </MapArea>
+            <Country code="44" name="UK"/>
+            <Country code="353" name="Ireland"/>
+        </MapParameterDescriptor>
+   
+        <MapParameterDescriptor id="rad_nl" name="NL" description="Radar Netherlands">
+            <Projection geoPixelWidthMeter="1074.9917354982683"
+                geoPixelHeightMeter="1072.4027123136912"
+                pixelCountWidth="700"
+                pixelCountHeight="765"
+                pixelOffsetX="0"
+                pixelOffsetY="-3911890.1729054004"
+                velocityScale="8.0">+proj=stere +lat_0=90 +lat_ts=90 +lon_0=0 +datum=WGS84 +units=m +no_defs</Projection>
+            <MapArea minZoom="2" maxZoom="15" name="nl">
+                <BoundingRect latitude1="55.9745" longitude1="3.0034" latitude2="50.795" longitude2="7.209"/>
+            </MapArea>
+            <Country code="31"/>
+        </MapParameterDescriptor>
+		
+		<MapParameterDescriptor id="rad_ch" name="CH" description="Radar Switzerland">
+            <Projection geoPixelWidthMeter="1001.6589019423421"
+                geoPixelHeightMeter="1002.217710090751"
+                pixelCountWidth="710"
+                pixelCountHeight="640"
+                pixelOffsetX="255052.3657792788"
+                pixelOffsetY="480441.57420079992"
+                velocityScale="8.0">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</Projection>
+            <MapArea minZoom="2" maxZoom="15" name="ch">
+                <BoundingRect latitude1="49.38" longitude1="2.69" latitude2="43.62" longitude2="12.46"/>
+            </MapArea>
+            <Country code="41"/>
+        </MapParameterDescriptor>
+		
+		<MapParameterDescriptor id="rad_fr" name="FR" description="Radar France">
+            <Projection geoPixelWidthMeter="2149.792377130344"
+                geoPixelHeightMeter="2143.19267210415"
+                pixelCountWidth="790"
+                pixelCountHeight="724"
+                pixelOffsetX="-1079854.7058729"
+                pixelOffsetY="-4332668.5727059552"
+                velocityScale="8.0">+proj=stere +lat_0=90 +lat_ts=90 +lon_0=5 +datum=WGS84 +units=m +no_defs</Projection>
+            <MapArea minZoom="2" maxZoom="15" name="fr">
+                <BoundingRect latitude1="53.467973" longitude1="-9.518992" latitude2="39.792072" longitude2="13.734322"/>
+            </MapArea>
+            <Country code="33"/>
+        </MapParameterDescriptor>
+   
+    </MapGroup>
+   
+</RainRoot>
+<!-- lang  locale  -->

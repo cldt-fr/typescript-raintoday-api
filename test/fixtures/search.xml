@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+ <cities previousOffset="-1" nextOffset="3">
+  <city country="33" city="22960" id="1841939" country-name="France" province-name="Ile-de-France" continent="6" inhabitants="2200000" longitude="2.333333" latitude="48.866667" name="Paris" timezone="Europe/Paris"/>
+  <city country="111" city="145906" id="18965822" country-name="Etats-Unis" province-name="Texas" continent="4" inhabitants="26000" longitude="-95.555513" latitude="33.6609389" name="Paris" timezone="America/Chicago"/>
+  <city country="111" city="139205" id="18959136" country-name="Etats-Unis" province-name="Tennessee" continent="4" inhabitants="10000" longitude="-88.3267107" latitude="36.3020023" name="Paris" timezone="America/Chicago"/>
+ </cities>
+ <pois>
+  <poi country="372" id="16572259" country-name="Estonie" continent="6" longitude="25.733056" latitude="59.623333" name="Pärispea Poolsaar" timezone="Europe/Tallinn"/>
+  <poi country="98" id="16331237" country-name="Iran" continent="2" longitude="51.791667" latitude="29.512778" name="Parīshān" timezone="Asia/Tehran"/>
+  <poi country="957" id="16692175" country-name="Colombie" continent="3" longitude="-75.8" latitude="6.633333" name="París" timezone="America/Bogota"/>
+ </pois>
+</result>
